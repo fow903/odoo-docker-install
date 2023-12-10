@@ -3,7 +3,7 @@
 
 ##### 1. Download the script:
 ```
-sudo wget https://raw.githubusercontent.com/fow903/odoo-docker-install/12.0/odoo_install.sh
+sudo wget https://raw.githubusercontent.com/fow903/odoo-docker-install/15.0/odoo_install.sh
 ```
 ##### 2. Modify the parameters as you wish.
 There are a few things you can configure, this is the most used list:<br/>
