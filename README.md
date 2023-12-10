@@ -8,7 +8,7 @@ sudo wget https://raw.githubusercontent.com/fow903/odoo-docker-install/12.0/odoo
 ##### 2. Modify the parameters as you wish.
 There are a few things you can configure, this is the most used list:<br/>
 ```OE_USER``` will be the username for the system user.<br/>
-```ODOO_VERSION``` is the Odoo version to install, for example ```16.0``` for Odoo V16.<br/>
+```ODOO_VERSION``` is the Odoo version to install, for example ```17.0``` for Odoo V17.<br/>
 ```POSTGRES_VERSION``` is the Postgres version to install, for example ```15``` for Postgres V15.<br/>
 #### 3. Make the script executable
 ```
