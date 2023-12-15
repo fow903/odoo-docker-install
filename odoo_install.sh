@@ -33,7 +33,7 @@ LOG_PATH="/var/log/$OE_USER"
 sudo mkdir $LOG_PATH
 sudo chown $OE_USER:$OE_USER $LOG_PATH
 
-sudo chown 101 $FILESTORE_DIR
+sudo chown 101 $LOG_PATH
 
 echo -e "\n---- Create Config directory ----"
 
