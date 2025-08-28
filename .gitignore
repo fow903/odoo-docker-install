@@ -1,0 +1,20 @@
+# Exclude data files
+data/
+filestore_data/
+
+# Exclude Odoo files
+*.pyc
+__pycache__/
+*.egg-info/
+*.egg
+*.pyo
+*.swp
+*.swo
+*.bak
+*.db
+*.sqlite3
+*.log
+*.pid
+*.sock
+trading-bot-venv
+

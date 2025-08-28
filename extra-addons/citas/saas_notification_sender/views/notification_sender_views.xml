@@ -1,0 +1,41 @@
+<odoo>
+    <record id="action_saas_notification_sender" model="ir.actions.act_window">
+      <field name="name">Send Notification</field>
+      <field name="res_model">saas.notification.sender</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+  
+    <record id="view_notification_sender_form" model="ir.ui.view">
+      <field name="name">saas.notification.sender.form</field>
+      <field name="model">saas.notification.sender</field>
+      <field name="arch" type="xml">
+        <form string="Send Notification">
+          <sheet>
+            <group>
+              <field name="name"/>
+              <field name="message"/>
+              <field name="target_dbs"/>
+            </group>
+            <footer>
+              <button name="action_send_notification" type="object" class="btn-primary" string="Send Notification"/>
+              <button string="Cancel" special="cancel" class="btn-secondary"/>
+            </footer>
+          </sheet>
+        </form>
+      </field>
+    </record>
+  
+    <record id="view_notification_sender_tree" model="ir.ui.view">
+      <field name="name">saas.notification.sender.tree</field>
+      <field name="model">saas.notification.sender</field>
+      <field name="arch" type="xml">
+        <tree string="Sent Notifications">
+          <field name="name"/>
+          <field name="target_dbs"/>
+        </tree>
+      </field>
+    </record>
+  
+    <menuitem id="menu_saas_notification_sender_root" name="SaaS Notifications" sequence="10"/>
+    <menuitem id="menu_saas_notification_sender" name="Send Notification" parent="menu_saas_notification_sender_root" action="action_saas_notification_sender"/>
+  </odoo>
